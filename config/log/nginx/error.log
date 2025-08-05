@@ -1,0 +1,6 @@
+2025/08/05 19:02:31 [error] 262#262: *6 directory index of "/config/www/" is forbidden, client: 172.20.0.1, server: v1.ezrahernowo.com, request: "GET / HTTP/1.1", host: "v1-test.ezrahernowo.com"
+2025/08/05 19:02:31 [error] 262#262: *6 open() "/config/www/403.html" failed (2: No such file or directory), client: 172.20.0.1, server: v1.ezrahernowo.com, request: "GET / HTTP/1.1", host: "v1-test.ezrahernowo.com"
+2025/08/05 19:03:33 [error] 261#261: *7 directory index of "/config/www/" is forbidden, client: 172.20.0.1, server: v1.ezrahernowo.com, request: "GET / HTTP/1.1", host: "v1.ezrahernowo.com"
+2025/08/05 19:03:33 [error] 261#261: *7 open() "/config/www/403.html" failed (2: No such file or directory), client: 172.20.0.1, server: v1.ezrahernowo.com, request: "GET / HTTP/1.1", host: "v1.ezrahernowo.com"
+2025/08/05 19:04:31 [error] 261#261: *7 directory index of "/config/www/" is forbidden, client: 172.20.0.1, server: v1.ezrahernowo.com, request: "HEAD / HTTP/1.1", host: "v1.ezrahernowo.com", referrer: "https://v1.ezrahernowo.com"
+2025/08/05 19:04:31 [error] 261#261: *7 open() "/config/www/403.html" failed (2: No such file or directory), client: 172.20.0.1, server: v1.ezrahernowo.com, request: "HEAD / HTTP/1.1", host: "v1.ezrahernowo.com", referrer: "https://v1.ezrahernowo.com"
