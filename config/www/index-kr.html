@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="개인 포트폴리오 페이지에 오신 것을 환영합니다">
+    <meta name="author" content="Ezra H">
+    <title>I'm Ezra H</title>
+    <!-- font icons -->
+    <link rel="canonical" href="https://ezrahernowo.com/index-kr.html">
+    <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon.png">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="">ZraH</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a data-target="about" class="link" style="cursor: pointer;">소개</a>
+                </li>
+                <li class="item">
+                    <a data-target="projects" class="link" style="cursor: pointer;">프로젝트</a>
+                </li>
+                <li class="item">
+                    <a data-target="certificates" class="link" style="cursor: pointer;">자격증</a>
+                </li>
+                <li class="item">
+                    <a data-target="contact" class="link" style="cursor: pointer;">연락처</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="https://drive.google.com/file/d/1HTe3mxz8kqvGU7ha8FMcM_ch1GVZpJET/view?usp=sharing" target="_blank" class="btn btn-primary">이력서 보기</a>
+                </li>
+            </ul>            
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+            <div class="language-switcher">
+                <button class="lang-btn" onclick="toggleDropdown()" aria-label="Switch language">
+                    <img src="assets/imgs/icon/kr.svg" alt="Language Selector" class="lang-icon" id="lang-icon">
+                </button>
+                <ul class="lang-dropdown" id="lang-dropdown">
+                    <li><a href="/en" data-lang="en"><img src="assets/imgs/icon/en.svg" alt="English Flag" class="flag-icon"> English</a></li>
+                    <li><a href="/kr" data-lang="kr"><img src="assets/imgs/icon/kr.svg" alt="Korean Flag" class="flag-icon"> 한국어</a></li>
+                    <li><a href="/id" data-lang="id"><img src="assets/imgs/icon/id.svg" alt="Indonesian Flag" class="flag-icon"> Indonesia</a></li>
+                </ul>
+            </div>            
+        </div>          
+    </nav>
+    <!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">안녕하세요,</span>
+                <span class="down">에스라입니다</span>
+            </h1>
+            <p class="header-subtitle">데이터 사이언스 학생</p>            
+            <a href="javascript:void(0)" class="btn btn-primary" onclick="openDemoModal()">
+                데모 체험하기
+            </a>
+        </div>              
+    </header><!-- end of page header -->
+
+ <!-- Demo Modal -->
+    <div id="demoModal" class="demo-modal">
+        <div class="demo-modal-content">
+            <span class="demo-close" onclick="closeDemoModal()">&times;</span>
+            
+            <div class="demo-modal-header">
+                <h3>라이브 데모</h3>
+                <p>인터랙티브 프로젝트와 AI 애플리케이션을 체험해보세요</p>
+            </div>
+            
+            <div class="demo-modal-body">
+                <div class="demo-grid">
+                    <!-- AI 개인 비서 데모 -->
+                    <div class="demo-card">
+                        <div class="demo-status">라이브</div>
+                        <div class="demo-card-icon">🤖</div>
+                        <h4>AI 개인 비서</h4>
+                        <p>다양한 작업과 대화를 도와주는 맞춤형 AI 모델과 상호작용해보세요.</p>
+                        <div class="demo-card-tech">
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Next.js</span>
+                        </div>
+                        <a href="https://aichat-demo.ezrahernowo.com" target="_blank" class="demo-btn">데모 체험</a>
+                    </div>
+
+                    <!-- 리드 스코링 데모 -->
+                    <div class="demo-card">
+                        <div class="demo-status">라이브</div>
+                        <div class="demo-card-icon">📊</div>
+                        <h4>리드 스코링 파이프라인</h4>
+                        <p>영업 최적화를 위한 리드 전환 확률을 예측하는 머신러닝 모델입니다.</p>
+                        <div class="demo-card-tech">
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                        <a href="https://leadscore-demo.ezrahernowo.com" target="_blank" class="demo-btn">데모 체험</a>
+                    </div>
+
+                    <!-- 이탈 예측 데모 -->
+                    <div class="demo-card">
+                        <div class="demo-status coming-soon">출시 예정</div>
+                        <div class="demo-card-icon">📉</div>
+                        <h4>고객 이탈 예측</h4>
+                        <p>기업의 고객 유지와 의사결정 개선을 돕는 고객 이탈 확률 예측 머신러닝 모델입니다.</p>
+                        <div class="demo-card-tech">
+                            <span class="tech-tag"></span>
+                        </div>
+                        <a href="" target="_blank" class="demo-btn disabled">개발 중</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/profile.png" class="about-img" alt="프로필 사진">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">제가 누구인지 궁금하신가요 ?</p>
+                    <h2 class="section-title mb-3">자기소개</h2>
+                    <p style="text-align:justify;"> 
+                        안녕하세요! 저는 베네딕터스 <b>에스라</b> 헤르노오이고, 현재 청주대학교 데이터사이언스학과 4학년에 재학 중입니다. 지난 몇 년간 데이터 분석, 예측 모델링, 그리고 흥미진진한 인공지능과 머신러닝 분야에서 다양한 프로젝트를 통해 실무 경험을 쌓아왔습니다. 저는 데이터에서 숨겨진 인사이트를 발견하고 현실 문제를 해결하는 혁신적인 솔루션을 만드는 것에 열정을 가지고 있습니다.
+
+                        <br><br> 공부나 프로젝트에 몰두하지 않을 때는 음악을 연주하며 휴식을 취하곤 합니다. 여행도 제 또 다른 열정이며, 모험 중에 특별한 순간들을 사진으로 담는 것을 즐깁니다.
+
+                        <br><br> 제 사이트를 방문해 주셔서 감사드리며, 자유롭게 둘러보시고 연락하고 싶으시면 언제든지 말씀해 주세요!              
+                    </p>
+                    <a href="https://www.instagram.com/zrasdraft/" class="btn-rounded btn btn-outline-primary mt-4" target="_blank">취미 생활 보기</a>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container text-center">
+            <p class="section-subtitle">어디에서 일했나요 ?</p>
+            <h6 class="section-title mb-6">업무 경험</h6>
+            
+            <div class="text-left">
+                <!-- Experience 1: Telus Digital -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="/assets/imgs/logo/telus-logo.svg" alt="Telus Digital Logo" class="company-logo">
+                            <div class="company-info">
+                                <h5 class="company-name">Telus Digital</h5>
+                                <p class="company-location">원격 근무</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="multiple-roles">
+                        <section class="role-section">
+                            <div class="role-item">
+                                <div class="role-left">
+                                    <span class="role-title">데이터 어노테이터 (Apple 프로젝트)</span>
+                                    <span class="role-type">프리랜서</span>
+                                </div>
+                                <span class="role-duration">2024년 8월 - 현재</span>
+                            </div>
+                            <div class="role-description">
+                                Apple TV, App Store, Apple Music을 위한 머신러닝 검색 시스템을 개선하기 위해 시간당 35-40개의 쿼리-결과 쌍을 평가하고, 관련성 차이를 식별하며, 알고리즘 정확도와 사용자 경험 향상을 위한 상세한 피드백을 제공하고 있습니다.
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Experience 2: Cheongju University -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <img src="/assets/imgs/logo/cju-logo.webp" alt="Cheongju University Logo" class="company-logo">
+                            <div class="company-info">
+                                <h5 class="company-name">청주대학교</h5>
+                                <p class="company-location">청주, 한국</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="multiple-roles">
+                        <section class="role-section">
+                            <div class="role-item">
+                                <div class="role-left">
+                                    <span class="role-title">학생 홍보대사</span>
+                                    <span class="role-type">파트타임</span>
+                                </div>
+                                <span class="role-duration past">2022년 10월 - 2023년 8월</span>
+                            </div>
+                            <div class="role-description">
+                                세나얀에서 열린 "Study in Korea" 박람회에서 청주대학교 부스를 관리하여 600명 이상의 잠재 지원자를 상담했으며, 자카르타와 탄게랑 지역 고등학교에서 대학 설명회를 진행했고, 대학 경영진과 함께 인도네시아 출장을 코디네이트하며 예비 학생들의 입학 관련 정보를 지원했습니다.
+                            </div>
+                        </section>
+                        
+                        <section class="role-section">
+                            <div class="role-item">
+                                <div class="role-left">
+                                    <span class="role-title">소셜 미디어 전문가</span>
+                                    <span class="role-type">파트타임</span>
+                                </div>
+                                <span class="role-duration past">2022년 10월 - 2023년 1월</span>
+                            </div>
+                            <div class="role-description">
+                                Adobe 소프트웨어를 활용하여 예비 학생들의 관심을 끌고 청주대학교의 브랜드 인지도를 높이는 매력적인 Instagram 및 Facebook 광고 콘텐츠를 제작했습니다.
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- end of experience section -->
+
+    <!-- Expertise section -->
+    <section class="section" id="expertise">
+        <div class="container text-center">
+            <p class="section-subtitle">무엇을 하나요 ?</p>
+            <h6 class="section-title mb-6">관심 분야</h6>
+
+            <!-- row 1 -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="expertise-card">
+                        <div class="body">
+                            <img src="assets/imgs/expertise/aoi-python.webp" alt="Python" class="icon">
+                            <h6 class="title">Python</h6>
+                            <p class="subtitle">데이터 조작부터 일상 업무를 자동화하는 스크립트 구축까지, 모든 것을 위한 제 주력 언어입니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="expertise-card">
+                        <div class="body">
+                            <img src="assets/imgs/expertise/aoi-llm.webp" alt="Statistical Analysis" class="icon">
+                            <h6 class="title">LLM</h6>
+                            <p class="subtitle">이 모델들이 어떻게 원시 데이터를 의미 있는 인사이트로 변환하고 인간의 의사결정 과정을 향상시킬 수 있는지에 매료되어 있습니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="expertise-card">
+                        <div class="body">
+                            <img src="assets/imgs/expertise/aoi-analytics.webp" alt="Analytics" class="icon">
+                            <h6 class="title">데이터 분석</h6>
+                            <p class="subtitle">복잡한 데이터세트에서 숨겨진 패턴을 발견하고 이를 실행 가능한 비즈니스 인텔리전스로 변환하는 것을 좋아합니다</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+
+            <!-- row 2 -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="expertise-card">
+                        <div class="body">
+                            <img src="assets/imgs/expertise/aoi-machine-learning.webp" alt="Python" class="icon">
+                            <h6 class="title">머신러닝</h6>
+                            <p class="subtitle">지능적인 모델링과 원시 데이터를 실행 가능한 인사이트로 변환하는 예측 시스템을 만드는 제 알고리즘적 역량의 핵심입니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="expertise-card">
+                        <div class="body">
+                            <img src="assets/imgs/expertise/aoi-model-deployment.webp" alt="Statistical Analysis" class="icon">
+                            <h6 class="title">모델 배포</h6>
+                            <p class="subtitle">Next.JS를 사용하여 웹 브라우저에서 원활하게 실행되는 모델 배포를 전문으로 합니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="expertise-card">
+                        <div class="body">
+                            <img src="assets/imgs/expertise/aoi-cloud-compute.webp" alt="Analytics" class="icon">
+                            <h6 class="title">클라우드 컴퓨팅</h6>
+                            <p class="subtitle">웹사이트 배포, API를 통한 모델 서비스 제공, 강력한 데이터베이스 시스템 유지를 위해 자체 서버를 호스팅하고 관리합니다</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+
+        </div>
+    </section><!-- end of expertise section -->
+
+    <!-- projects section -->
+    <section class="section" id="projects">
+        <div class="container text-center">
+            <p class="section-subtitle">무엇을 했나요 ?</p>
+            <h6 class="section-title mb-6">내 프로젝트</h6>
+
+            <!-- row 1 -->
+            <div class="row row-spacing">
+            <div class="row row-spacing">
+                <div class="col-md-4">
+                    <a href="https://github.com/1bytess/lead-scoring-pipeline" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="/assets/imgs/projects/machine_learning_pipeline.webp" class="img-responsive rounded" alt="Machine Learning Pipeline Illustration">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>스코어링 리드 ML 파이프라인 구축 </h4>
+                                <p class="font-weight-normal">Python | Logistic Regression | Flask</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <a href="https://github.com/1bytess/series_of_runpod_training_and_inference" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/projects/ai-web-app.webp" alt="AI 훈련 및 개발 일러스트">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>AI 개인 비서: 훈련 및 배포</h4>
+                                <p class="font-weight-normal">LLM | Axoltl | 풀스택 개발</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <a href="https://github.com/1bytess/Capstone-Project-SpaceX" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="/assets/imgs/projects/spacex-rocket.webp" alt="SpaceX 로켓 AI 일러스트">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>IBM 캡스톤 프로젝트: Space X 착륙 예측</h4>
+                                <p class="font-weight-normal">Python | Dash | 분류</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </div><!-- end of row -->
+
+            <!-- row 2 -->
+            <div class="row row-spacing">
+                <!-- Project 4 -->
+                <div class="col-md-4">
+                    <a href="https://github.com/1bytess/analyzing-911-calls" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/projects/analysis-911-calls.webp" class="img-responsive rounded" alt="911 응급 전화 AI 일러스트">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>대학 캡스톤 프로젝트: 911 신고 분석</h4>
+                                <p class="font-weight-normal">Python | 데이터 시각화 | 분석</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <!-- Project 5 -->
+                <div class="col-md-4">
+                    <a href="https://github.com/1bytess/gwangju-bus-traffic-analysis" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/projects/gwangju-bus.webp" alt="광주 버스 AI 일러스트">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>광주 버스 교통 분석</h4>
+                                <p class="font-weight-normal">R | EDA | 데이터 분석</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <!-- Project 6 -->
+                <div class="col-md-4">
+                    <a href="https://github.com/1bytess/NVDA-Forecast-Using-ARIMA" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/projects/nvidia-stock.webp" alt="엔비디아 주식 AI 일러스트">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>NVIDIA 주가 예측</h4>
+                                <p class="font-weight-normal">Python | 시계열 분석 | ARIMA</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </div><!-- end of row -->
+            <a href="https://github.com/1bytess?tab=repositories" target="_blank" class="btn btn-outline-primary rounded">더 보기</a>
+        </div><!-- end of container -->
+    </section> <!-- end of projects section -->
+
+    <!-- Certificates Section -->
+    <section class="section" id="certificates">
+        <div class="container text-center">
+            <p class="section-subtitle">저의 전문 분야는 무엇인가요 ?</p>
+            <h6 class="section-title mb-6">자격증</h6>
+
+            <!-- Row 1 -->
+            <div class="row">
+                <!-- Certificate 1 -->
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <div class="certificate-img-container">
+                            <img src="/assets/imgs/certificates/cert-machine-learning.webp" alt="스탠포드 머신러닝 전문과정 자격증" class="certificate-img" onclick="openModal('/assets/imgs/certificates/cert-machine-learning.webp')">
+                        </div>
+                        <h6 class="certificate-title">[스탠포드] 머신러닝 전문과정</h6>
+                        <a class="btn btn-outline-primary btn-sm disabled" aria-disabled="true">진행 중</a>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <div class="certificate-img-container">
+                            <img src="/assets/imgs/certificates/cert-google-data.webp" alt="구글 데이터 분석 자격증" class="certificate-img" onclick="openModal('/assets/imgs/certificates/cert-google-data.webp')">
+                        </div>
+                        <h6 class="certificate-title">[Google] 고급 데이터 분석</h6>
+                        <a href="https://coursera.org/verify/professional-cert/3HAUA9PX6V8W" target="_blank" class="btn btn-outline-primary btn-sm">자격증 보기</a>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <div class="certificate-img-container">
+                            <img src="/assets/imgs/certificates/cert-ibm-data.webp" alt="IBM 데이터 사이언스 자격증" class="certificate-img" onclick="openModal('/assets/imgs/certificates/cert-ibm-data.webp')">
+                        </div>
+                        <h6 class="certificate-title">[IBM] 데이터 사이언스</h6>
+                        <a href="https://coursera.org/verify/professional-cert/ZDMD6WSH1RR5" target="_blank" class="btn btn-outline-primary btn-sm">자격증 보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row">
+                <!-- Certificate 1 -->
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <div class="certificate-img-container">
+                            <img src="/assets/imgs/certificates/cert-applied-data.webp" alt="IBM 응용 데이터 사이언스 자격증" class="certificate-img" onclick="openModal('/assets/imgs/certificates/cert-applied-data.webp')">
+                        </div>
+                        <h6 class="certificate-title">[IBM] 응용 데이터 사이언스</h6>
+                        <a href="https://coursera.org/verify/specialization/ST8YM6ZGRUXL" target="_blank" class="btn btn-outline-primary btn-sm">자격증 보기</a>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <div class="certificate-img-container">
+                            <img src="/assets/imgs/certificates/cert-hkust-python.webp" alt="금융 분석을 위한 파이썬과 통계 자격증" class="certificate-img" onclick="openModal('/assets/imgs/certificates/cert-hkust-python.webp')">
+                        </div>
+                        <h6 class="certificate-title">[HKUST] 금융 분석을 위한 파이썬과 통계</h6>
+                        <a href="https://coursera.org/verify/6GF2BSN83T5V" target="_blank" class="btn btn-outline-primary btn-sm">자격증 보기</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="section" id="awards">
+        <div class="container text-center">
+            <p class="section-subtitle">저의 성과는 무엇인가요 ?</p>
+            <h6 class="section-title mb-6">수상 내역</h6>
+
+            <div class="row">
+                <!-- Award 1-->
+                <div class="col-md-4">
+                    <div class="awards-card">
+                        <div class="awards-img-container">
+                            <img src="/assets/imgs/awards/award-syp-analysis.webp" alt="최우수 연구상" class="awards-img" onclick="openModal('/assets/imgs/awards/award-syp-analysis.webp')">
+                        </div>
+                        <h6 class="awards-title">2023 특허 빅데이터 분석 경진대회</h6>
+                        <a href="https://drive.google.com/file/d/1E_snFkKY4Li7jc8Cx5DU9YhRX0e_E5KC/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm">상세 보기</a>
+                    </div>
+                </div>
+
+                <!-- Award 2-->
+                <div class="col-md-4">
+                    <div class="awards-card">
+                        <div class="awards-img-container">
+                            <img src="/assets/imgs/awards/award-syp-viz.webp" alt="최우수 연구상" class="awards-img" onclick="openModal('/assets/imgs/awards/award-syp-viz.webp')">
+                        </div>
+                        <h6 class="awards-title">2022 특허 빅데이터 시각화 경진대회</h6>
+                        <a href="https://drive.google.com/file/d/1m93XYavbo_5Suw4u7s-i-AO5_9DZBOvn/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm">상세 보기</a>
+                    </div>
+                </div>
+
+                <!-- Award 3-->
+                <div class="col-md-4">
+                    <div class="awards-card">
+                        <div class="awards-img-container">
+                            <img src="/assets/imgs/awards/award-cipc-rd.webp" alt="최우수 연구상" class="awards-img" onclick="openModal('/assets/imgs/awards/award-cipc-rd.webp')">
+                        </div>
+                        <h6 class="awards-title">2022 특허 빅데이터 IP-R&D 경진대회</h6>
+                        <a href="https://drive.google.com/file/d/12ki-fGDAYe-MbdFHyiFQ_fg1pTpgNzbm/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm">상세 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Enlarged Images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">저와 연결하고 싶으신가요?</h6>
+                    <p class="m-0 text-light">언제든지 편하게 연락해 주세요</p>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <p class="section-subtitle text-center">어떻게 연락할 수 있을까요 ?</p>
+            <h6 class="section-title mb-5 text-center">연락처</h6>
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="d-flex flex-column align-items-start">
+                        <!-- Contact Info -->
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-envelope text-primary mr-2"></i>
+                                <img src="assets/imgs/icon/email-logo.png" alt="Email Logo">
+                                <span><a href="mailto:contact@ezrahernowo.com">contact@ezrahernowo.com</a></span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone-alt text-primary mr-2"></i>
+                                <img src="assets/imgs/icon/phone-logo.png" alt="Phone Logo">
+                                <span><a href="tel:+821082298071">(+82) 010 8229 8071</a></span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fab fa-linkedin text-primary mr-2"></i>
+                                <img src="assets/imgs/icon/linkedin-logo.png" alt="Linkedin Logo">
+                                <span><a href="https://linkedin.com/in/ezrahernowo" target="_blank">LinkedIn 프로필</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="col-lg-6">
+                    <!-- Contact Form -->
+                    <form action="https://formspree.io/f/mrbpakyd" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <input type="text" name="name" class="form-control" placeholder="성함" required>                 
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="email" name="email" class="form-control" placeholder="이메일" required>                 
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <textarea name="message" rows="6" class="form-control" placeholder="문의사항" required></textarea>
+                            </div>
+                            <div class="form-group col-sm-12 mt-3">
+                                <input type="submit" value="메시지 보내기" class="btn btn-outline-primary rounded">                  
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <a href="">Copyright <script>document.write(new Date().getFullYear())</script> &copy; ZraH</a>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://github.com/1bytess" class="link" target="_blank"><i class="ti-github"></i></a>
+                <a href="https://huggingface.co/bytess" class="link" target="_blank"><i class="ti-face-smile"></i></a>
+                <a href="https://www.linkedin.com/in/ezrahernowo" class="link" target="_blank"><i class="ti-linkedin"></i></a>
+                <a href="https://www.instagram.com/ezrahernowo/" class="link" target="_blank"><i class="ti-instagram"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Script -->
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>

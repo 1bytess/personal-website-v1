@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /index-en.html
+Allow: /index-ko.html
+Allow: /index-id.html
+Allow: /en/
+Allow: /kr/
+Allow: /id/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://ezrahernowo.com/sitemap.xml

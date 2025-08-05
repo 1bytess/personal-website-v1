@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nginx-ezrahernowo:
+    image: lscr.io/linuxserver/nginx:latest
+    container_name: personal-website-v1
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Seoul
+    volumes:
+      - ./config:/config
+    ports:
+      - 1080:80
+      - 1443:443
+    restart: unless-stopped
